@@ -1,15 +1,29 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Pacifico&family=Playball&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playball&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Oleo Script Swash Caps', cursive;
+    --fonte3:'Playball', cursive;
+
+}
+
 
 
  * {
      margin: 0px;
      padding: 0px;
+     
 }   
 
 html, body {
-   min-height: 100%vh;
+   min-height: 100vh;
    background-color: darkgray; 
+   font-family: var(--fonte1);
 }
 
 header{
@@ -22,6 +36,8 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     /*text-transform: uppercase;*/
+    font-family: var(--fonte2);
+    font-size: 8vw;
 }
 
 header > p {
@@ -46,6 +62,9 @@ padding-top: 10vh;
 padding-bottom: 10vh;
 line-height: 2em;
 padding-left: 30px;
+font-family: var(--fonte3);
+font-size: 4vw;
+
 
 }
 
@@ -61,6 +80,8 @@ section.imagem{
 }
 
 section.imagem > p{
+    display: inline-block;
+    padding: 5px;
     width: 500px;
     background-color: rgb(54, 54, 54);
 }
